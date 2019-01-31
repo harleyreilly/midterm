@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<form name="Calculator">
+		<table border="4">
+		<tr>
+		<td colspan="8"><input type="text" name="input" class="display" /><td>
+		</tr>
+			<tr>
+			
+				<td><input class="one" value="1" type="button" onclick="Calculator.input.value +='1'"/></td>
+				<td><input class="two" value="2" type="button" onclick="Calculator.input.value +='2'" /></td>
+				<td><input class="three" value="3" type="button" onclick="Calculator.input.value +='3'"/></td>
+				<td><input class="add" value="+" type="button" onclick="Calculator.input.value +='+'" /></td>	
+			</tr>
+			<tr>
+				<td><input class="four"value="4" type="button" onclick="Calculator.input.value +='4'"/></td>
+				<td><input class="five"value="5" type="button" onclick="Calculator.input.value +='5'" /></td>
+				<td><input class="six"value="6" type="button" onclick="Calculator.input.value +='6'"/></td>
+				<td><input class="minus"value="-" type="button" onclick="Calculator.input.value +='-'" /></td>
+			</tr>
+			<tr>
+				<td><input class="seven" value="7" type="button" onclick="Calculator.input.value +='7'"/></td>
+				<td><input class="eight"value="8" type="button" onclick="Calculator.input.value +='8'" /></td>
+				<td><input class="nine"value="9" type="button" onclick="Calculator.input.value +='9'"/></td>
+				<td><input class="zero"value="0" type="button" onclick="Calculator.input.value +='0'" /></td>
+			</tr>
+			<tr>
+				<td><input class="clear" value="CLEAR" type="button" onclick="Calculator.input.value =''"/></td>
+				<td><input class="mod"value="%" type="button" onclick="Calculator.input.value +='%'" /></td>
+				<td><input class="eq" value="=" type="button" onclick="Calculator.input.value =eval(Calculator.input.value)"/></td>
+				<td><input class="times" value="*" type="button" onclick="Calculator.input.value +='*'" /></td>
+			</tr>
+		
+		</table>
+
+	</form>
+
+</body>
+</html>
